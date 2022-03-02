@@ -18,3 +18,9 @@ Start the program by running the following command.
 
 
 ![**Interface**](greed_image)
+
+## Authors
+
+* Teddy Tjoe
+* Julieta White
+* John Adeloye

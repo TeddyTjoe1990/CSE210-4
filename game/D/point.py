@@ -1,8 +1,8 @@
-class loc:
+class Point:
     """A distance from a relative origin (0, 0).
 
-    The responsibility of loc is to hold and provide information about itself. 
-    Loc/location has a few convenience methods for adding, scaling, and comparing them.
+    The responsibility of Point is to hold and provide information about itself. Point has a few 
+    convenience methods for adding, scaling, and comparing them.
 
     Attributes:
         _x (integer): The horizontal distance from the origin.
@@ -30,7 +30,7 @@ class loc:
         """
         x = self._x + other.get_x()
         y = self._y + other.get_y()
-        return loc(x, y)
+        return Point(x, y)
 
     def equals(self, other):
         """Whether or not this Point is equal to the given one.
@@ -69,4 +69,4 @@ class loc:
         Returns:
             Point: A new Point that is scaled.
         """
-        return loc(self._x * factor, self._y * factor)
+        return Point(self._x * factor, self._y * factor)
