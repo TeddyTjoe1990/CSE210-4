@@ -1,6 +1,7 @@
 import pyray
 
-class display:
+
+class VideoService:
     """Outputs the game state. The responsibility of the class of objects is to draw the game state 
     on the screen. 
     """
@@ -31,27 +32,27 @@ class display:
         if self._debug == True:
             self._draw_grid()
     
-    def draw_player(self, player):
-        """Draws the given player's text on the screen.
+    def draw_actor(self, actor):
+        """Draws the given actor's text on the screen.
 
         Args:
-            player (gamer): The player to draw.
+            actor (Actor): The actor to draw.
         """ 
-        text = player.get_text()
-        x = player.get_position().get_x()
-        y = player.get_position().get_y()
-        font_size = player.get_font_size()
-        color = player.get_color().to_tuple()
+        text = actor.get_text()
+        x = actor.get_position().get_x()
+        y = actor.get_position().get_y()
+        font_size = actor.get_font_size()
+        color = actor.get_color().to_tuple()
         pyray.draw_text(text, x, y, font_size, color)
         
-    def draw_players(self, players):
+    def draw_actors(self, actors):
         """Draws the text for the given list of actors on the screen.
 
         Args:
-            players (list): A list of actors to draw.
+            actors (list): A list of actors to draw.
         """ 
-        for player in players:
-            self.draw_player(player)
+        for actor in actors:
+            self.draw_actor(actor)
     
     def flush_buffer(self):
         """Copies the buffer contents to the screen. This method should be called at the end of
