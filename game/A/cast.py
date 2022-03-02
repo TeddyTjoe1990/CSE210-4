@@ -1,5 +1,3 @@
-# Direct paste from rfk
-
 class Cast:
     """A collection of actors.
 

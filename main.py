@@ -1,4 +1,3 @@
-# Import all needed libraries and other resources
 import random
 
 from game.casting.actor import Actor

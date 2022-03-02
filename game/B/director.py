@@ -7,7 +7,6 @@ from game.shared.constants import Constants
 import random
 
 constants = Constants()
-# Direct paste from rfk
 
 class Director:
     """A person who directs the game. 
