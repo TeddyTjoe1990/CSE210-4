@@ -137,13 +137,10 @@ class Director:
                             cast.add_actor("gems", artifact)
                         elif gem_or_rock == 2:
                             cast.add_actor("rocks", artifact)
-
-
         self._frames += 1
         
     def _do_outputs(self, cast):
         """Draws the actors on the screen.
-        
         Args:
             cast (Cast): The cast of actors.
         """
