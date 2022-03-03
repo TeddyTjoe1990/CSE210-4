@@ -2,7 +2,7 @@ import random
 
 from game.shared.color import Color
 from game.shared.point import Point
-from game.shared.constants import Constants
+from game.shared.constant import Constants
 
 Constants = Constants()
 

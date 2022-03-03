@@ -3,11 +3,10 @@ from game.casting.rock import Rock
 
 from game.shared.color import Color
 from game.shared.point import Point
-from game.shared.constants import Constants
+from game.shared.constant import Constants
 import random
 
 constants = Constants()
-# Direct paste from rfk
 
 class Director:
     """A person who directs the game. 
@@ -138,13 +137,10 @@ class Director:
                             cast.add_actor("gems", artifact)
                         elif gem_or_rock == 2:
                             cast.add_actor("rocks", artifact)
-
-
         self._frames += 1
         
     def _do_outputs(self, cast):
         """Draws the actors on the screen.
-        
         Args:
             cast (Cast): The cast of actors.
         """
