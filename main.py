@@ -12,7 +12,7 @@ from game.services.video_service import VideoService
 
 from game.shared.color import Color
 from game.shared.point import Point
-from game.shared.constants import Constants
+from game.shared.constant import Constants
 
 constants = Constants()
 
